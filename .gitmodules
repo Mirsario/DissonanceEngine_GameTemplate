@@ -1,0 +1,6 @@
+[submodule "Engine"]
+	path = References/Engine
+	url = https://github.com/Mirsario/DissonanceEngine
+[submodule "References/DissonanceEngine"]
+	path = References/DissonanceEngine
+	url = https://github.com/Mirsario/DissonanceEngine
