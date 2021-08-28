@@ -1,12 +1,2 @@
-﻿namespace ExampleGame
-{
-	public static class Program
-	{
-		public static void Main(string[] args)
-		{
-			using var main = new Main();
-
-			main.Run(args: args);
-		}
-	}
-}
+﻿using var main = new ExampleGame.Main();
+main.Run(args: args);
