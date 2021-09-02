@@ -1,4 +1,5 @@
-﻿using Dissonance.Engine;
+﻿using System;
+using Dissonance.Engine;
 using ExampleGame.Common.Movement;
 
 namespace ExampleGame.Systems
@@ -24,12 +25,14 @@ namespace ExampleGame.Systems
 
 				sineMovement.StartPosition ??= transform.Position;
 
-				transform.Position = sineMovement.StartPosition.Value + new Vector3(Mathf.Sin(time * 2f), Mathf.Sin(time), Mathf.Cos(time * 0.5f));
-				transform.EulerRot = new Vector3(
-					Mathf.Sin(time * 2f),
-					Mathf.Sin(time),
-					Mathf.Cos(time * 0.5f)
-				) * 20f;
+				var offset = new Vector3(
+					MathF.Sin(time * 2f),
+					MathF.Sin(time),
+					MathF.Cos(time * 0.5f)
+				);
+
+				transform.Position = sineMovement.StartPosition.Value + offset;
+				transform.EulerRot = offset * 20f;
 			}
 		}
 	}

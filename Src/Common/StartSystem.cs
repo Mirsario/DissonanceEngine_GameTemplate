@@ -24,7 +24,7 @@ namespace ExampleGame.Common
 				cube.Set(new Light(Light.LightType.Point, Vector3.Normalize(new Vector3(Rand.Next(1f), Rand.Next(1f), Rand.Next(1f)))));
 				cube.Set(new MeshRenderer(PrimitiveMeshes.Cube, Resources.Find<Material>("TestCube")));
 				cube.Set(new SineMovement {
-					TimeOffset = i / 5f * Mathf.TwoPI
+					TimeOffset = i / 5f * MathHelper.TwoPI
 				});
 			}
 		}
