@@ -13,10 +13,10 @@ namespace ExampleGame.Common.Meta
 	{
 		protected override void FixedUpdate()
 		{
-			if(InputEngine.GetMouseButton(MouseButton.Left)) {
+			if (InputEngine.GetMouseButton(MouseButton.Left)) {
 				Screen.CursorState = CursorState.Disabled;
-			} else if(InputEngine.GetKeyDown(Keys.Escape)) {
-				if(Screen.CursorState != CursorState.Normal) {
+			} else if (InputEngine.GetKeyDown(Keys.Escape)) {
+				if (Screen.CursorState != CursorState.Normal) {
 					Screen.CursorState = CursorState.Normal;
 				} else {
 					Game.Quit();
