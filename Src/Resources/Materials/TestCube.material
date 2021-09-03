@@ -1,6 +1,6 @@
 {
 	"name": "$FileName$",
-	"shader": "Specular",
+	"shader": "Deferred/Specular",
 	"textures": {
 		"mainTex": "NoTexture.png"
 	}
