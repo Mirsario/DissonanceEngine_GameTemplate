@@ -4,8 +4,8 @@ using ExampleGame.Common.Movement;
 
 namespace ExampleGame.Systems
 {
-	[Reads(typeof(SineMovement))]
-	[Writes(typeof(Transform))]
+	[Reads<SineMovement>]
+	[Writes<Transform>]
 	public sealed class SineMovementSystem : GameSystem
 	{
 		private EntitySet entities;
