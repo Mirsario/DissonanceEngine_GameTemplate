@@ -9,7 +9,7 @@ namespace ExampleGame.Common.Meta
 	/// <summary>
 	/// Quits the game whenever the escape key is pressed twice. Also controls cursor focus.
 	/// </summary>
-	public sealed class GameQuitSystem : GameSystem
+	public sealed class QuitSystem : GameSystem
 	{
 		protected override void FixedUpdate()
 		{
