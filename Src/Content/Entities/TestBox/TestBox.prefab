@@ -1,0 +1,8 @@
+Transform: { }
+
+SineMovement: { }
+
+MeshRenderer: {
+	Mesh: TestBox.obj
+	Material: TestBox.material
+}

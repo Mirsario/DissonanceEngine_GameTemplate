@@ -1,0 +1,15 @@
+Transform: { }
+
+Camera: {
+	FieldOfView: 90
+}
+
+Light: {
+	Type: Point
+	Range: 64.0
+	Color: [ 1.0, 0.9, 0.7 ]
+}
+
+SineMovement: {
+	TimeOffset: 302.2
+}

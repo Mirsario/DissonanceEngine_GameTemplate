@@ -1,0 +1,6 @@
+Name: $FileName$
+Shader: Deferred/Specular
+
+Textures: {
+	mainTex: TestBox.png
+}
