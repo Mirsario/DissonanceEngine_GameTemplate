@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DissonanceEngine", "Referen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DissonanceFramework", "References\DissonanceEngine\Framework\Src\DissonanceFramework.csproj", "{D885D685-0F87-4A8E-B8A6-7CD1BCF66053}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DissonanceSourceGen", "References\DissonanceEngine\SourceGenerators\DissonanceSourceGen.csproj", "{6C08A701-2B09-4B8E-B3F2-2142289F11FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D885D685-0F87-4A8E-B8A6-7CD1BCF66053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D885D685-0F87-4A8E-B8A6-7CD1BCF66053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D885D685-0F87-4A8E-B8A6-7CD1BCF66053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C08A701-2B09-4B8E-B3F2-2142289F11FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C08A701-2B09-4B8E-B3F2-2142289F11FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C08A701-2B09-4B8E-B3F2-2142289F11FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C08A701-2B09-4B8E-B3F2-2142289F11FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
