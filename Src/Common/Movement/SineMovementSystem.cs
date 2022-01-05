@@ -4,8 +4,7 @@ using ExampleGame.Common.Movement;
 
 namespace ExampleGame.Systems
 {
-	[Reads<SineMovement>]
-	[Writes<Transform>]
+	[Callback<FixedUpdateCallback>]
 	public sealed class SineMovementSystem : GameSystem
 	{
 		private EntitySet entities;
@@ -15,7 +14,7 @@ namespace ExampleGame.Systems
 			entities = World.GetEntitySet(e => e.Has<SineMovement>() && e.Has<Transform>());
 		}
 
-		protected override void FixedUpdate()
+		protected override void Execute()
 		{
 			foreach (var entity in entities.ReadEntities()) {
 				ref var sineMovement = ref entity.Get<SineMovement>();

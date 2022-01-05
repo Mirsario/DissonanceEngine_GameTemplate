@@ -8,9 +8,10 @@ namespace ExampleGame.Common.Meta
 	/// <summary>
 	/// Enables framebuffer debugging whenever the 'F' key is held.
 	/// </summary>
+	[Callback<RenderUpdateCallback>]
 	public sealed class FramebufferDebugSystem : GameSystem
 	{
-		protected override void RenderUpdate()
+		protected override void Execute()
 		{
 			Rendering.DebugFramebuffers = InputEngine.GetKey(Keys.F);
 		}

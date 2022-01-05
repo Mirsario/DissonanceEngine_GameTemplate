@@ -5,7 +5,7 @@ namespace ExampleGame.Common
 	/// <summary>
 	/// Initializes the game.
 	/// </summary>
-	[Sends<SpawnEntityMessage>]
+	[Callback<BeginFixedUpdateCallback>]
 	public sealed class StartSystem : GameSystem
 	{
 		protected override void Initialize()
