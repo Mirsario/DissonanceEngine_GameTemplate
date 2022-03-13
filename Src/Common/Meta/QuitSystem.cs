@@ -1,8 +1,6 @@
 ﻿using Dissonance.Engine;
 using Dissonance.Engine.Graphics;
 using Dissonance.Engine.Input;
-using Dissonance.Framework.Windowing;
-using Dissonance.Framework.Windowing.Input;
 
 namespace ExampleGame.Common.Meta
 {
