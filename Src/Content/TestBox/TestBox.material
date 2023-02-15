@@ -1,5 +1,5 @@
 Name: $FileName$
-Shader: Deferred/Specular
+Shader: Deferred/Diffuse
 
 Textures: {
 	mainTex: TestBox.png
